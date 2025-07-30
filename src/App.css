@@ -8,6 +8,23 @@
   margin-top: 10px;
   margin-left: 320px;
 }
+
+@media (max-width: 600px) {
+  .home-pills-row {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+  .home-pill {
+    min-width: 0;
+    width: 90vw;
+    max-width: 320px;
+    font-size: 1.1rem;
+    padding: 14px 0;
+  }
+}
+
 .home-pill {
   display: flex;
   align-items: center;
@@ -25,16 +42,127 @@
   transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
   opacity: 1;
   cursor: pointer;
-  min-width: 150px;
-  min-height: 50px;
+  min-width: 180px;
+  min-height: 70px;
   font-size: 1.35rem;
 }
-.home-pill:hover {
-  background: linear-gradient(90deg, #5b86e5 0%, #36d1c4 100%);
-  color: #fff;
-  box-shadow: 0 8px 32px #36d1c488;
-  transform: translateY(-3px) scale(1.09);
+
+.home-flex {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
 }
+
+@media (max-width: 600px) {
+  .home-flex {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 0 0 0;
+  }
+  .profile-pic {
+    width: 140px;
+    height: 140px;
+    margin: 0 0 12px 0;
+    border-width: 4px;
+  }
+  .home-info {
+    align-items: center;
+    width: 100vw;
+    padding: 0 8px;
+  }
+  .bouncy-name {
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .home-tags {
+    font-size: 0.95rem;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .home-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    margin-top: 18px;
+  }
+  .home-skill-switcher-center {
+    margin-top: 28px;
+    margin-left: 0;
+  }
+}
+
+.portfolio-container {
+  background: rgba(18, 22, 34, 0.98);
+  border-radius: 22px;
+  box-shadow: 0 8px 40px #36d1c455, 0 1.5px 8px #0008;
+  padding: 0;
+  max-width: 1100px;
+  width: 100%;
+  margin: 90px auto 70px auto;
+  overflow: hidden;
+  border: 2.5px solid #36d1c4;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (max-width: 600px) {
+  .portfolio-container {
+    border-radius: 0;
+    margin: 0;
+    max-width: 100vw;
+    width: 100vw;
+    min-width: 0;
+    padding: 0;
+  }
+  .section {
+    padding: 18px 0 12px 0;
+    min-height: 220px;
+  }
+  .navbar {
+    width: 100vw;
+    max-width: 100vw;
+    gap: 10px;
+    padding: 12px 0 8px 0;
+    font-size: 0.98rem;
+  }
+  .navbar a {
+    font-size: 1rem;
+    padding: 4px 4px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-flex,
+  .contact-flex,
+  .skills-list,
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .profile-pic {
+    margin-bottom: 18px;
+  }
+  .portfolio-container {
+    margin: 0;
+    border-radius: 0;
+  }
+  .section {
+    padding: 24px 0 16px 0;
+    min-height: 260px;
+  }
+}
+
 /* Extra geeky SVG backgrounds */
 
 .matrix-bg {
@@ -1041,7 +1169,7 @@ body::before {
     border-radius: 0;
   }
   .section {
-    padding: 36px 0 24px 0;
-    min-height: 320px;
+    padding: 24px 0 16px 0;
+    min-height: 260px;
   }
 }
