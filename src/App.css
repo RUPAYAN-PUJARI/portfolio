@@ -155,6 +155,16 @@
     font-size: 1rem;
     padding: 4px 4px;
   }
+  .section h2 {
+    font-size: 1.1rem;
+    padding: 0 4vw;
+    word-break: break-word;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.15;
+    max-width: 98vw;
+    overflow-wrap: break-word;
+  }
 }
 @media (max-width: 600px) {
   .portfolio-container {
@@ -554,7 +564,7 @@
   display: flex;
   justify-content: center;
   margin-top: 52px;
-  margin-left: 100px;
+  margin-left: 80px;
 }
 .skill-switcher-box {
   display: flex;
