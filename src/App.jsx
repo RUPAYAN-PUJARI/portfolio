@@ -191,12 +191,12 @@ function App() {
             <div className="home-buttons creative-btns">
               <a
                 className="cv-btn"
-                href="/assets/My resume.pdf"
+                href="/assets/Rupayan Pujari's Resume pdf.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Download CV
+                My Resume
               </a>
               <a
                 className="linkedin-btn"
